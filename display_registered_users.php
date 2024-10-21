@@ -1,4 +1,8 @@
 function display_registered_users() {
+
+        if (!is_user_logged_in()){
+            return;
+        }
         // Get all users
         $users = get_users();
         $user_data = [];
