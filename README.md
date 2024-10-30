@@ -1,1 +1,1 @@
-Useful LearnDash shortcodes
+Useful WordPress and LearnDash shortcodes
