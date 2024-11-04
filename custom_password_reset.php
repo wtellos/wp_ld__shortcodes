@@ -19,7 +19,7 @@ function custom_password_reset_form() {
               }, 20, 2);
             
             $reset_key = get_password_reset_key($user);
-            // cprf_log_message('RESET KEY : ' . $reset_key);
+
             if (is_wp_error($reset_key)) {
                 return;
             }
@@ -29,10 +29,7 @@ function custom_password_reset_form() {
             $message = "Click here to reset your password: " . $reset_url;
             if (wp_mail($user->user_email, 'Password Reset Request', $message)) {
                 echo '<div class="uk-alert-success"><p>A password reset link has been sent to your email address.</p></div>';
-            } else {
-                $last_error = error_get_last();
-                cprf_log_message('EMAIL NOT SENT. LAST ERROR: ' . print_r($last_error, true));
-            }
+            } 
         } else {
             echo '<div class="uk-alert-danger"><p>No user found with this username or email.</p></div>';
         }
