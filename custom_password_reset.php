@@ -28,7 +28,9 @@ function custom_password_reset_form() {
           $site_name = get_bloginfo('name');
           $site_url = home_url();
           $reset_url = network_site_url("wp-login.php?action=rp&key=$reset_key&login=" . rawurlencode($user->user_login) . "&wp_lang=en_US", 'login');
-      
+
+            $from_name = 'The ' . $site_name . ' Team';
+            $from_email = 'wordpress@' . parse_url($site_url, PHP_URL_HOST);
           // Email headers
           $headers = array(
             'Content-Type: text/html; charset=UTF-8',
