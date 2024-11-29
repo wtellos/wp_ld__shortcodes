@@ -1,7 +1,7 @@
 <?php
 // Force login if the user is not on the homepage and not logged in
 function force_login_redirect() {
-    if ( !is_user_logged_in() && !is_front_page() && !is_home() ) {
+    if ( !is_user_logged_in() && !is_front_page() && !is_home() && !in_array('page-id-622', get_body_class()) {
         wp_redirect( wp_login_url() ); // Redirect to the login page
         exit;
     }
