@@ -17,7 +17,6 @@ function force_login_redirect() {
               exit;
           }
     }
-}
 add_action( 'template_redirect', 'force_login_redirect' );
 
 // Redirect users to the homepage after logout
