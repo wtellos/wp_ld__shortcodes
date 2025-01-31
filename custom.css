@@ -1,0 +1,93 @@
+#icl_lang_sel_widget-3 {display:flex;justify-content:center;}
+#icl_lang_sel_widget-3 .wpml-ls-link{
+background:transparent !important;
+}
+#tm-mobile .uk-grid-margin.uk-first-column .uk-panel{text-align:center;}
+#tm-mobile ul.uk-nav {margin-top:40px}
+#tm-mobile ul.uk-nav a{justify-content:center;}
+
+body.qJTHM {display:none !important}
+
+#credential_picker_container {
+  display: none;
+}
+
+.funded-eu-img, .co-funded-eu-img {display:none}
+
+.cardet_multi_lg_p, .privacy_text {display:none;}
+
+/* WPML switcher fix (Part 2) */
+.wpml-ls-legacy-dropdown a {
+    line-height: 2;
+}
+
+.wpml-ls-link {
+    padding: 0 !important;
+    width: 100%;
+    border-radius: 50%;
+    width: 36px;
+    height: 36px;
+	display: flex !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.wpml-ls-legacy-dropdown a.wpml-ls-item-toggle {
+    font-size: 14px;
+    border-radius: 50%;
+    padding: 0;
+    width: 36px;
+    height: 36px;
+    text-align: center;
+    line-height: 2.4;
+}
+.acf-required {color:red;}
+#learndash-registration-wrapper h2, #learndash-reset-password-wrapper h2 {display:none;}
+#learndash-registration-wrapper input, #learndash-reset-password-wrapper input {
+  padding: 10px;
+  margin-bottom: 0 !important;
+}
+
+#learndash-registration-wrapper input, #learndash-reset-password-wrapper input {
+  padding: 10px;
+  margin-bottom: 0 !important;
+  transition: all .35s linear;
+}
+#learndash-registration-wrapper input:focus-visible, #learndash-reset-password-wrapper input:focus-visible {
+    background: rgba(0,0,0,0.1);
+    outline: 0px !important;
+} 
+.learndash-registration-field {
+  margin: 10px 0px;
+}
+
+
+.ld-login-button {
+  font-size: 13px !important;
+  padding: 13px !important;
+  border-radius: 30px !important;
+}
+
+.trp-ls-shortcode-current-language, .trp-ls-shortcode-language a{
+	background-image:none !important;
+	padding:0 !important;
+	width:40px !important;
+	height:40px !important;
+	border-radius:50% !important;
+	display:flex !important;
+	border:1px solid !important;
+	justify-content:center !important;
+	align-items:center !important;
+}
+
+.trp-ls-shortcode-language{
+	width:unset !important;
+	padding:0 !important;
+	border: 0 !important;
+	max-height:unset !important;
+	background-color:transparent !important;
+}
+
+.trp-ls-shortcode-language a{
+	margin-bottom:7px;
+}
