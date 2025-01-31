@@ -1,0 +1,109 @@
+.topics_shortcode {z-index:2; position:relative; transition:all .35s linear;}
+.cardet-modal-spinner {transition:all .35s linear; opacity:0;}
+
+.iframe-Rise, .iframe-Storyline {transition:all .35s linear; opacity:0;}
+
+.uk-button.uk-button-primary.return-rise-button {
+  position: absolute;
+  bottom: -120px;
+  z-index: 99;
+  transition: all .35s linear;
+  display:none;
+}
+
+
+.uk-button.uk-button-primary.return-rise-button.now-active {
+  opacity: 1 !important;
+  position: absolute;
+  bottom: 30px;
+  z-index: 99;
+  transition: all .35s linear;
+  display:block;
+}
+.cardet-lesson-grid .cardet-lesson-completed.uk-icon {
+  position: absolute;
+  border: 1px solid;
+  border-radius: 50%;
+  padding: 5px;
+}
+.cardet-topic-not-completed .uk-alert-success.uk-icon {
+	background-color: #dedede;
+}
+.cardet-lesson-grid .cardet-lesson-not-completed.uk-icon {display:none;}
+
+.cardet-topics-list li{
+	position:relative;
+	background-color:#efefef;
+	padding:10px 10px;
+	
+}
+
+.cursor-pointer {
+	cursor:pointer;
+}
+
+.cardet-topics-list li img {
+	height:30px;
+	position:absolute;
+	left:10px;
+	top:calc(50% - 15px);
+}
+
+.cardet-topics-list li {
+	padding-left:50px;
+	cursor:pointer;
+}
+.uk-list .cardet-topic-completion-icon {
+	position:absolute;
+	right:10px;
+	top:calc(50% - 11px);	
+}
+.cardet-topic-completion-icon {
+	border:1px solid;		
+}
+
+.cardet-topic-completion-icon  svg{opacity:0;}
+
+.cardet-topic-completed .cardet-topic-completion-icon  svg{opacity:1;}
+
+.cardet-lesson-bar {width:100%;
+height:15px; background-color:#EFEFEF;
+border-radius:30px;}
+
+.cardet-lesson-bar-inner {
+	width:0px;
+	border-radius:30px;
+	height:100%;
+	background-color:#226B37;
+	transition:all .35s ease-out;
+}
+
+.grid-topic-inner {
+	/* border: 1px solid; */
+	text-align: center;
+	/* padding: 10px; */
+	height: 100%;
+	position: relative;
+  }
+
+  .grid-topic-inner span.uk-icon {
+	position: absolute;
+	top: 0;
+	right: 0;
+	border: 0;
+	padding: 4px;
+  }
+
+  /* // LD register button */
+#wp-submit {
+  background-color: #77b456 !important;
+  max-width: 300px;
+  border: none !important;
+  border-radius: 0 !important;
+  font-weight: bold !important;
+}
+
+/* // TrasnslatePress highlight outline color */
+.trp-highlight {
+  outline: 2px solid #ff8c13 !important;
+}
